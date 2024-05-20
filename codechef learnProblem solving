@@ -1,0 +1,6 @@
+# cook your dish here
+def total_courses(N):
+    return 2 * N
+N = int(input())
+result = total_courses(N)
+print(result)
