@@ -1,0 +1,6 @@
+# cook your dish here
+def max_customers_served(X, Y):
+    return X * Y
+X, Y = map(int, input().split())
+result = max_customers_served(X, Y)
+print(result)
