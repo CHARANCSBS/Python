@@ -1,0 +1,4 @@
+Rearrange the following code
+c = a + b
+a, b = map(int, input().split()) 
+print(c)
