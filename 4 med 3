@@ -1,0 +1,5 @@
+n, m = map(int, input("Enter two integers (n m): ").split())
+print("Multiplication table of", n, "up to", m, "rows:")
+
+for i in range(1, m + 1):
+    print(n, "x", i, "=", n * i)
