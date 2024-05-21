@@ -1,0 +1,14 @@
+n = int(input("Enter how many values do you want to read: "))
+positive_count = 0
+negative_count = 0
+
+print("Enter {} values:".format(n))
+for _ in range(n):
+    num = int(input())
+    if num >= 0:
+        positive_count += 1
+    else:
+        negative_count += 1
+
+print("The number of positive numbers:", positive_count)
+print("The number of negative numbers:", negative_count)
