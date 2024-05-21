@@ -1,0 +1,3 @@
+num_squats = int(input("Enter the number of squats: "))
+total_time = num_squats * 2
+print("Total time taken: ", total_time, "seconds")
