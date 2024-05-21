@@ -1,0 +1,16 @@
+n = int(input("Enter a number: "))
+
+if n <= 0:
+    print("Invalid input")
+else:
+    count = 0
+    num = 1
+
+    while True:
+        if int(num ** (1/2)) ** 2 == num and int(num ** (1/3)) ** 3 == num:
+            count += 1
+        if count == n:
+            break
+        num += 1
+
+    print("The {}-th number which is both a square and a cube is: {}".format(n, num))
