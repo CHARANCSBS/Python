@@ -1,0 +1,11 @@
+marital_status = input("Enter the driver's marital status (married/unmarried): ")
+gender = input("Enter the driver's gender (male/female): ")
+age = int(input("Enter the driver's age: "))
+if marital_status == "married":
+   print("The driver is insured.")
+elif marital_status == "unmarried" and gender == "male" and age > 30:
+    print("The driver is insured.")
+elif marital_status == "unmarried" and gender == "female" and age > 25:
+    print("The driver is insured.")
+else:
+    print("The driver is not insured.")
