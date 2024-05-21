@@ -1,0 +1,11 @@
+
+n = int(input("Enter the value of n: "))
+m = int(input("Enter the value of m: "))
+if n > m:
+    n, m = m, n
+if n % 9 == 0:
+    start = n
+else:
+    start = n + (9 - n % 9)
+divisible_by_9 = [num for num in range(start, m + 1, 9)]
+total_sum = sum(divisible_by_9)
