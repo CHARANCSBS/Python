@@ -1,0 +1,13 @@
+n, k = map(int, input("Enter n and k: ").split())
+
+count = 0
+number = 0
+
+while True:
+    number += 1
+    if '0' + str(k) in str(number) or number % k == 0:
+        count += 1
+    if count == n:
+        break
+
+print("The {}-th number that contains the digit {} or is divisible by {}: {}".format(n, k, k, number))
