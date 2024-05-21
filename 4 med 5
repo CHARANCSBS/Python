@@ -1,0 +1,5 @@
+
+a, b = map(int, input("Enter a and b: ").split())
+print("Numbers between {} and {} (inclusive):".format(a, b))
+for num in range(a, b + 1):
+    print(num)
