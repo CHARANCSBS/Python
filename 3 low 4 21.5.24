@@ -1,0 +1,6 @@
+n = int(input("Enter an integer with more than two digits: "))
+if n < 100:
+    print("The number should have more than two digits.")
+else:
+    last_digit = n % 100
+    print("The last digit is:", last_digit)
