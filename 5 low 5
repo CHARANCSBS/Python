@@ -1,0 +1,17 @@
+n = int(input("Enter number of elements : "))
+if n <= 0:
+    print("Invalid input")
+else:
+    arr = list(map(float, input("Enter array elements : ").split()))
+    if len(arr) != n:
+        print("Invalid array")
+    else:
+        mean_value = sum(arr) / len(arr)
+        variance_value = 0
+        for num in arr:
+            variance_value += (num - mean_value) ** 2
+        variance_value /= len(arr)
+        deviation_value = variance_value ** 0.5
+        print("Mean is : ", mean_value)
+        print("Variance is : ", variance_value)
+        print("Standard Deviation is : ", deviation_value)
