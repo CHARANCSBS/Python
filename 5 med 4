@@ -1,0 +1,15 @@
+n = int(input("Enter how many values you want to read: "))
+arr1 = [0] * n
+arr2 = [0] * n
+for i in range(n):
+    arr1[i] = int(input(f"Enter the value of a[{i}]: "))
+    arr2[i] = int(input(f"Enter the value of b[{i}]: "))
+equal = True
+for i in range(n):
+    if arr1[i] != arr2[i]:
+        equal = False
+        break
+if equal:
+    print("Both arrays are equal")
+else:
+    print("Both arrays are not equal")
