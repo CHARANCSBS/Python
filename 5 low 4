@@ -1,0 +1,20 @@
+def insert_and_delete(arr, n, pos, num):
+    if pos < 0 or pos >= n:
+        print("Invalid position")
+    else:
+        arr.insert(pos, num)
+        del arr[pos + 1]
+        print("Array after insertion and deletion: ", arr)
+
+n = int(input("Enter number of elements : "))
+if n <= 0:
+    print("Invalid input")
+else:
+    arr = list(map(int, input("Enter array elements : ").split()))
+    if len(arr) != n:
+        print("Invalid array")
+    else:
+        print("Original array: ", arr)
+        num = int(input("Enter number to insert : "))
+        pos = int(input("Enter position to insert at : "))
+        insert_and_delete(arr, n, pos, num)
