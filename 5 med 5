@@ -1,0 +1,21 @@
+n = int(input("Enter array size: "))
+if n <= 0:
+    print("Invalid input")
+    exit()
+arr = list(map(int, input(f"Enter {n} array elements: ").split()))
+if len(arr) != n:
+    print("Invalid input")
+    exit()
+rep = -1
+s = set(arr)
+if len(s) != (n - 1):
+    for i in s:
+        if i not in range(1, n):
+            continue
+        if arr.count(i) > 1:
+            rep = i
+            break
+if rep == -1:
+    print("Array elements are not repeated")
+else:
+    print(f"The repetitive element: {rep}")
