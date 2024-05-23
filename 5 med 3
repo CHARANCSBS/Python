@@ -1,0 +1,8 @@
+n = int(input("Enter how many values you want to read: "))
+arr = [0] * n
+for i in range(n):
+    arr[i] = int(input(f"Enter the value of a[{i}]: "))
+sum = 0
+for i in range(n):
+    sum += arr[i]
+print("The sum of array elements = ", sum)
