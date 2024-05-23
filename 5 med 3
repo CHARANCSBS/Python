@@ -1,0 +1,16 @@
+n = int(input("Enter array size : "))
+if n <= 0:
+    print("Invalid array size")
+else:
+    arr = list(map(int, input("Enter sorted array elements : ").split()))
+    last_index = -1
+    last_duplicate = -1
+    for i in range(1, n):
+        if arr[i] == arr[i-1]:
+            last_index = i
+            last_duplicate = arr[i]
+    if last_index == -1:
+        print("No duplicate found")
+    else:
+        print("Last index: {}".format(last_index))
+        print("Last duplicate item : {}".format(last_duplicate))
