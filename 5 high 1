@@ -1,0 +1,15 @@
+import math
+
+n = int(input("Enter array size : "))
+if n <= 0:
+    print("Invalid input")
+else:
+    arr = list(map(int, input("Enter array elements : ").split()))
+    arr.sort(reverse=True)
+    for num in arr:
+        root = math.sqrt(num)
+        if int(root + 0.5) ** 2 != num:
+            print(num)
+            break
+    else:
+        print(-1)
