@@ -1,0 +1,13 @@
+n = int(input("Enter array size : "))
+if n <= 0:
+    print("Invalid input")
+else:
+    arr = list(map(int, input("Enter array elements : ").split()))
+    if len(arr) != n:
+        print("Invalid array")
+    else:
+        element = int(input("Enter element to search : "))
+        if element in arr:
+            print("Element found at position : ", arr.index(element))
+        else:
+            print("Element not found")
